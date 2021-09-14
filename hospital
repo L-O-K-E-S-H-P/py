@@ -1,0 +1,34 @@
+class Hospital:
+    def __init__(self,hospital_name,address_hospital):
+        self.hospital_name=hospital_name
+        self.address_hospital=address_hospital
+        
+    def print_hospital_details(self):
+        print(self.hospital_name)
+        print(self.address_hospital)
+        
+class doctor:
+    def __init__(self,name,specialisation, availability_days, appointment_seat,Hospital):
+       self.name=name
+       self.specialisation=specialisation
+       self.availability_days=availability_days
+       self.appointment_seat=appointment_seat
+      
+    def is_available(self,day):
+        if day =self.availability_days:
+            return True
+        else:
+            return False
+    def is_specialist(self,disease):
+        if  disease in self.specialisation:
+            return True
+        else:
+            return False
+    
+    def book_appointment(self,day,disease):
+        if self.appointment 
+        
+             
+        
+obj1=Hospital("Lokesh Multi-Speciality Hospital","13,South street,Gandhi Nagar,Tirupathi")
+print(obj1.print_hospital_details())
