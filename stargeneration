@@ -1,0 +1,19 @@
+"""Star Generaton: Create a python functon which takes a number N and generates following star 
+pacern accordingly. N ranges from 1 to any positve number. Make sure if N is not passed as 
+argument while calling function, it should take 3 as it’s default value"""
+##default arguments
+def star(n,key=3):
+    if n==0:
+        n=key
+    for i in range (n):
+        if i%2!=0:
+            for j in range (i+1):
+                print("@",end="")
+            print()    
+        else :    
+            for j  in range (i+1):
+               print("*",end="")
+        print()
+
+n=int(input("enter the numbers:"))
+a=star(n)
